@@ -1,0 +1,6 @@
+error_code,error_log_entries,unique_affected_traces,services,regions,events
+NULL_CUSTOMER_CONTEXT,920,460,"api-gateway, auth-service",us-east-1,"application.exception, http.response"
+INVENTORY_DEADLOCK,387,387,inventory-service,"ap-south-1, eu-west-1, us-east-1",inventory.tx.deadlock
+DB_POOL_EXHAUSTED,622,311,"api-gateway, order-service","ap-south-1, eu-west-1, us-east-1","db.pool.exhausted, http.response"
+TRANSIENT_FAILURE,394,197,"api-gateway, auth-service, cart-service, catalog-service, inventory-service, notification-worker, order-service, payment-service","ap-south-1, eu-west-1, us-east-1","application.error, http.response"
+PAYMENT_PROVIDER_TIMEOUT,358,179,"api-gateway, payment-service",us-east-1,"http.response, payment.gateway.timeout"

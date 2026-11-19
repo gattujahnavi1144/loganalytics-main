@@ -1,0 +1,7 @@
+status,status_class,request_count,request_rate_pct
+200,2xx,10265,85.5417
+401,4xx,201,1.675
+409,4xx,387,3.225
+500,5xx,657,5.475
+503,5xx,311,2.5917
+504,5xx,179,1.4917

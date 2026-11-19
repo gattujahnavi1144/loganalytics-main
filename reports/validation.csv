@@ -1,0 +1,12 @@
+check,issue_count,details
+requests_required_columns,0,Missing columns: none
+requests_invalid_timestamps,0,Missing or unparsable timestamps
+logs_required_columns,0,Missing columns: none
+logs_invalid_timestamps,0,Missing or unparsable timestamps
+metrics_required_columns,0,Missing columns: none
+metrics_invalid_timestamps,0,Missing or unparsable timestamps
+requests_duplicate_trace_ids,0,Excess request rows sharing a non-null trace_id
+requests_missing_trace_ids,0,Request rows without a trace_id
+requests_invalid_statuses,0,"Status is missing, non-numeric, or outside HTTP 100-599"
+requests_invalid_latency,0,"Latency is missing, non-numeric, or negative"
+metrics_invalid_values,0,"Metric value is missing, non-numeric, or negative"

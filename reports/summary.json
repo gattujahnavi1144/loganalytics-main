@@ -1,0 +1,169 @@
+{
+  "request_count": 12000,
+  "request_5xx_count": 1147,
+  "request_5xx_rate_pct": 9.5583,
+  "request_trace_id_unique_count": 12000,
+  "regions": [
+    "ap-south-1",
+    "eu-west-1",
+    "us-east-1"
+  ],
+  "timestamp_start_utc": "2026-11-18T09:00:00.294000+00:00",
+  "timestamp_end_utc": "2026-11-18T12:59:58.468000+00:00",
+  "top_request_error_codes": [
+    {
+      "error_code": "NULL_CUSTOMER_CONTEXT",
+      "request_count": 460
+    },
+    {
+      "error_code": "INVENTORY_DEADLOCK",
+      "request_count": 387
+    },
+    {
+      "error_code": "DB_POOL_EXHAUSTED",
+      "request_count": 311
+    },
+    {
+      "error_code": "AUTH_INVALID_CREDENTIALS",
+      "request_count": 201
+    },
+    {
+      "error_code": "TRANSIENT_FAILURE",
+      "request_count": 197
+    },
+    {
+      "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+      "request_count": 179
+    }
+  ],
+  "failure_timeline": {
+    "baseline_start_utc": "2026-11-18T09:00:00+00:00",
+    "baseline_end_utc_exclusive": "2026-11-18T10:00:00+00:00",
+    "baseline_minutes": 60,
+    "baseline_5xx_rate_pct": 1.6667,
+    "baseline_5xx_std_pct": 0.9642,
+    "5xx_upper_threshold_pct": 4.5594,
+    "onset_rule": "First two consecutive five-minute intervals above baseline mean + 3 standard deviations, each with at least 3 5xx requests; fall back to the first qualifying interval if no pair exists.",
+    "onset_window_start_utc": "2026-11-18T10:45:00+00:00",
+    "onset_window_5xx_count": 30,
+    "onset_window_5xx_rate_pct": 12.0,
+    "first_5xx_request": {
+      "timestamp": "2026-11-18T09:02:32.440000+00:00",
+      "trace_id": "1de86a4d0a84c18238da2d843cc54515",
+      "region": "eu-west-1",
+      "endpoint": "/api/v1/orders",
+      "status": 500,
+      "latency_ms": 703,
+      "error_code": "TRANSIENT_FAILURE",
+      "version": "v2.7.3"
+    },
+    "onset_request_examples": [
+      {
+        "timestamp": "2026-11-18T10:45:12.722000+00:00",
+        "trace_id": "41f4a967518b03f200b3b941c8dda779",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 4852,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:45:19.501000+00:00",
+        "trace_id": "7d8a7dfef6782be28d09875f7385d15d",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 2955,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:45:30.955000+00:00",
+        "trace_id": "24ae980e043b3c68d2ab15027067e957",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 2600,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:45:45.668000+00:00",
+        "trace_id": "261ac8cdb5d2d05efa7c82e609455104",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 3172,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:46:00.962000+00:00",
+        "trace_id": "2001f4258827171bb4de83b2c01443ed",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 5649,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:46:05.824000+00:00",
+        "trace_id": "b7306003b1992fc5dc130520d7996237",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 4381,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:46:09.688000+00:00",
+        "trace_id": "2ca0936c29b0da1eee13c93637014318",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 4008,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:46:12.024000+00:00",
+        "trace_id": "3291415c54ef5f64930beaac78be68f1",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 4486,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:46:28.844000+00:00",
+        "trace_id": "bdcabad8a4efb87df921c38ba3635102",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 3109,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      },
+      {
+        "timestamp": "2026-11-18T10:46:56.860000+00:00",
+        "trace_id": "6b30e1432a369d91a6c4b93e0b6985a0",
+        "region": "us-east-1",
+        "endpoint": "/api/v1/checkout",
+        "status": 504,
+        "latency_ms": 5224,
+        "error_code": "PAYMENT_PROVIDER_TIMEOUT",
+        "version": "v2.7.3"
+      }
+    ],
+    "chart_path": "/home/jgattu615/Desktop/P3 AI Argumented Engineering/loganalytics-main/charts/error_timeline.png"
+  },
+  "chart_artifacts": {
+    "error_timeline": "/home/jgattu615/Desktop/P3 AI Argumented Engineering/loganalytics-main/charts/error_timeline.png",
+    "service_region_error_heatmap": "/home/jgattu615/Desktop/P3 AI Argumented Engineering/loganalytics-main/charts/service_region_error_heatmap.png"
+  },
+  "reports_directory": "/home/jgattu615/Desktop/P3 AI Argumented Engineering/loganalytics-main/reports"
+}
